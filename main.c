@@ -11,7 +11,7 @@ globales_t globalvar = {NULL, NULL, NULL};
 
 int main(int argc, char **argv)
 {
-    FILE = *file;
+    FILE  *file;
     char *token = NULL;
     size_t line_buf_size = 0;
     int line_number = 0, flag = 0, flag2 = 0;
@@ -22,7 +22,7 @@ int main(int argc, char **argv)
         stderr_usage();
 
 /* to open and check file */
-    file = globalvar.fd
+    file = globalvar.fd;
     file = fopen(argv[1], "r");
     if (file == NULL)
         stderr_fopen(argv[1]);
