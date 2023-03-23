@@ -29,6 +29,8 @@ int get_builtin(char *token, stack_t **stack, unsigned int line_number)
 		{ "pstr", pstr_t },
 		{ "rotl", rotrl },
 		{ "rotr", rotr },
+		{"queue", f_queue },
+		{"stack", f_stack },
 		{ NULL, NULL }
 	};
 	int i, flag = 0;
