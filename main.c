@@ -1,25 +1,21 @@
 #include "monty.h"
 
-globales_t globalvar = {NULL, NULL, NULL};
-
 /**
  * main - entry point for the CLI program
  * @argc: count of arguments passed to the program
  * @argv: pointer to an array of char pointers to arguments
  * Return: EXIT_SUCCESS or EXIT_FAILURE
  */
-
 int main(int argc, char **argv)
 {
+	globales_t globalvar = {NULL, NULL, NULL};
 	char *token = NULL;
 	size_t line_buf_size = 0;
 	int line_number = 0, flag = 0, flag2 = 0;
 	ssize_t line_size;
-	stack_t *stack = NULL;
-
+		stack_t *stack = NULL;
 	if (argc != 2)
 		stderr_usage();
-
 	globalvar.fd = fopen(argv[1], "r");
 	if (globalvar.fd == NULL)
 		stderr_fopen(argv[1]);
