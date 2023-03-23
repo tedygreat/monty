@@ -122,7 +122,6 @@ stack_t *add_dnodeint(stack_t **head, int n);
 
 void f_stack(stack_t **head, unsigned int counter);
 void f_queue(stack_t **head, unsigned int counter);
-
-
+void addqueue(stack_t **head, unsigned int n);
 
 #endif
